@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>NEW USER REGISTRATION</title>
+<script> 
+function validate()
+{ 
+   if( document.UserRegistration.name.value == "" )
+   {
+     alert( "Please provide your Name!" );
+     document.UserRegistration.name.focus() ;
+     return false;
+   }
+   if( document.UserRegistration.password.value == "" )
+   {
+     alert( "Please provide your password!" );
+     document.UserRegistration.password.focus() ;
+     return false;
+   }
+   
+   if( document.UserRegistration.confirmpassword.value == "" )
+   {
+     alert( "Please re enter password !" );
+     document.UserRegistration.confirmpassword.focus() ;
+     return false;
+   }
+      
+   if( document.UserRegistration.role.value == "-1" )
+   {
+     alert( "Please select your role!" );
+     document.UserRegistration.role.focus() ;
+     return false;
+   }   
+   if( document.UserRegistration.batchid.value == "-1" )
+   {
+     alert( "Please select your Batchid!" );
+    
+     return false;
+   }   
+    
+   if ( ( UserRegistration.gender[0].checked == false ) && ( UserRegistration.gender[1].checked == false ) )
+   {
+   alert ( "Please choose your Gender: Male or Female" );
+   return false;
+   } 
+   
+   return( true );
+}</script> 
+
+<style> 
+ {										 
+	margin-left: 70px; 
+	font-weight: bold ; 
+	float: left; 
+	clear: left; 
+	width: 100px; 
+	text-align: left; 
+	margin-right: 10px; 
+	font-family:sans-serif,bold, Arial, Helvetica; 
+	font-size:14px; 
+} 
+
+div { 
+	box-sizing: border-box; 
+	width: 100%; 
+	border: 100px solid black; 
+	float: left; 
+	align-content: center; 
+	align-items: center; 
+} 
+
+form {										 
+	margin: 0 auto; 
+	width: 600px; 
+}</style></head> 
+
+<body> 
+<h1 style="text-align: center"> REGISTRATION FORM </h1>	
+<body background="H:\GIT\myfirstgit\demo\src\main\resources\fujitsu.jpg">
+<form  action= "#"name="UserRegistration"  onsubmit="return (validate())" method="post">	
+<br><br><br> 
+<br><br><br> 
+ 
+
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<tr>
+    <td align='center'>Name:</td>
+    <td><input type='text' id='name'  placeholder="please enter the name"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+    <td align='center'>Password:</td>
+    <td><input type='password' id='password' placeholder="please enter password"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'>Confirm Password:</td>
+    <td><input type='password' id='confirmpassword' placeholder="please re enter the password"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+    <td align='center'>Role:</td>
+    <td>
+   
+     <select type="text" value="select role" id='role'> 
+             <option value="-1" selected>role..</option>
+            <option>Trainee</option> 
+            <option>Trainer</option> 
+                  </select>
+        </td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'>BatchID:</td>
+    <td>
+   
+     <select type="text" value="selectbatch" id='batchid'> 
+             <option value="-1" selected>selectbatch</option>
+            <option>1</option> 
+            <option>2</option> 
+                  </select>
+        </td>
+        
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+<td align='center'>Gender:</td>
+<td><input type="radio" id="gender" value="male" size="10">Male
+<input type="radio" id="gender" value="Female" size="10">Female</td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr> <td>&nbsp;</td> </tr>
+
+<table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
+<tr>
+<td >&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset"></td>
+    <td align='center'><input type='submit' id='register' value="Register"></td>
+</tr>
+</table>
+
+ 
+</table>
+
+</body> 
+</html> 
+
+
+</body>
+</html>
