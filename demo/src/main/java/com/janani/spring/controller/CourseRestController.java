@@ -13,14 +13,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.janani.spring.dao.CourseDAO;
 import com.janani.spring.model.Course;
 
 @CrossOrigin
 @RestController
 public class CourseRestController {
-
 	@Autowired
 	private CourseDAO courseDAO;
 
