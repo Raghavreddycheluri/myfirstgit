@@ -58,7 +58,7 @@ public class CourseRestController {
 		return new ResponseEntity<>(code, HttpStatus.OK);
 
 	}
-
+//add comments for the put api 
 	@PutMapping(value = "/course/{code}")
 	public ResponseEntity<?> updateCustomer(@PathVariable String code, @RequestBody Course course) {
 		// System.out.println("Updating");
