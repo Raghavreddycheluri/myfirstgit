@@ -9,7 +9,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import com.janani.spring.model.Course;
-import com.janani.spring.util.ConnectionUtil;
 
 @Component
 public class CourseDAO {
