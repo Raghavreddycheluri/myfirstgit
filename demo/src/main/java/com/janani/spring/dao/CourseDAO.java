@@ -59,7 +59,7 @@ public class CourseDAO {
 		});
 		return courses;
 	}
-
+//convert rs to dto
 	private Course convert(ResultSet rs) throws SQLException {
 
 		Course course = new Course();
